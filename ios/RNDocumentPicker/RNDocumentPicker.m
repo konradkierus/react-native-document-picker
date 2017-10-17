@@ -62,9 +62,9 @@ RCT_EXPORT_METHOD(pick:(NSDictionary *)options
     documentPicker.delegate = self;
     documentPicker.modalPresentationStyle = UIModalPresentationFormSheet;
     
-    if (@available(iOS 11, *)) {
-        documentPicker.allowsMultipleSelection = [RCTConvert BOOL:options[OPTION_MULIPLE]];
-    }
+    // if (@available(iOS 11, *)) {
+    //    documentPicker.allowsMultipleSelection = [RCTConvert BOOL:options[OPTION_MULIPLE]];
+    // }
     
     UIViewController *rootViewController = [[[[UIApplication sharedApplication]delegate] window] rootViewController];
     while (rootViewController.presentedViewController) {
